@@ -7,10 +7,11 @@ public:
         for(int i =0; i<n ; i++){
             people.push_back({heights[i] , names[i]});
         }
+        //arrange in decreasing order
         sort(people.rbegin(),people.rend());
 
         vector<string> result;
-        for(auto &p :  people){
+        for(auto p :  people){
             result.push_back(p.second);
         }
         return result;
