@@ -3,7 +3,7 @@ class Solution {
         String result[] = s.split( " " , k+1);
         StringBuffer sb = new StringBuffer();
 
-        for(int i =0 ; i<k && i<result.length ; i++){
+        for(int i =0 ; i<k ; i++){
             sb.append(result[i] + " ");
         }
         
