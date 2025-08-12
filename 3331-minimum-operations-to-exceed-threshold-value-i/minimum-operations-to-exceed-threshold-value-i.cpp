@@ -3,7 +3,7 @@ public:
     int minOperations(vector<int>& nums, int k) {
         sort(nums.begin(), nums.end());
         int n = nums.size();
-        int s = 0, e = n - 1, ans = n; // default: all elements < k
+        int s = 0, e = n - 1, ans = -1; 
         
         while (s <= e) {
             int mid = s + (e - s) / 2;
